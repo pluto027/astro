@@ -1,15 +1,12 @@
 ---
 import '../styles/global.css'
 const pageTitle = "My astro learning blog";
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-
-
-
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href = "/blog"> Blog </a>
 <html lang="en">
+    <Navigation/>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -26,4 +23,5 @@ const pageTitle = "My astro learning blog";
             <li><a href="/post/post-3">Post 3</a></li>
         </ul>
 	</body>
+    <Footer></Footer>
 </html>
