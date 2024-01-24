@@ -1,11 +1,11 @@
 ---
 import '../styles/global.css'
 import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const pageTitle = "Home page" ;
 ---
 <html lang="en">
-	<Navigation/>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,7 +14,9 @@ const pageTitle = "Home page" ;
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<Header></Header>
 		<h1>{pageTitle}</h1>
+		<h2>Hi PinCheng</h2>
 		<Footer></Footer>
 	</body>
 </html>
