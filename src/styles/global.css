@@ -19,7 +19,18 @@ h1{
     margin: 1rem 0;
     font-size: 2.5rem;
 }
-.nav-links{
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+.hamburger .line{
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+.nav-links {
     width: 100%;
     top: 5rem;
     left: 48px;
@@ -27,6 +38,7 @@ h1{
     display: none;
     margin: 0;
 }
+  
 .nav-links a {
     display: block;
     text-align: center;
@@ -35,7 +47,7 @@ h1{
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-  }
+}
   
   .nav-links a:hover,
   .nav-links a:focus {
@@ -45,7 +57,7 @@ h1{
   .expanded {
     display: unset;
   }
-  
+
   @media screen and (min-width: 636px) {
     .nav-links {
       margin-left: 5em;
@@ -59,5 +71,7 @@ h1{
       display: inline-block;
       padding: 15px 20px;
     }
-  
+    .hamburger {
+        display: none;
+    }
   }
